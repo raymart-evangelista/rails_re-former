@@ -34,10 +34,10 @@
 
 <%= form_with model: @user do |form| %>
   <%= form.label :username %>
-  <%= form.text_field :username %>
+  <%= form.text_field :username, value: "some_username" %>
   <br>
   <%= form.label :email %>
-  <%= form.email_field :email %>
+  <%= form.email_field :email, placeholder: "example@example.com" %>
   <br>
   <%= form.label :password %>
   <%= form.password_field :password %>
