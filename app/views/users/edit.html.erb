@@ -2,21 +2,21 @@
   <% if @user.errors[:username].any? %>
     <ul>
       <% @user.errors[:username].each do |message| %>
-        <li><%= message %></li>
+        <li>Username: <%= message %></li>
       <% end %>
     </ul>
   <% end %>
   <% if @user.errors[:email].any? %>
     <ul>
       <% @user.errors[:email].each do |message| %>
-        <li><%= message %></li>
+        <li>Email: <%= message %></li>
       <% end %>
     </ul>
   <% end %>
   <% if @user.errors[:password].any? %>
     <ul>
       <% @user.errors[:password].each do |message| %>
-        <li><%= message %></li>
+        <li>Password: <%= message %></li>
       <% end %>
     </ul>
   <% end %>
